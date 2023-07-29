@@ -8,6 +8,7 @@ class Decorator: public Object {
         Object *next;
     public:
         Decorator(Object *next): Object() , next(next) {}
+        ~Decorator() { delete next; }
 };
 
 class ConcereteDecoratorA : public Decorator {

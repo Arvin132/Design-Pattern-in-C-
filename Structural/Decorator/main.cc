@@ -9,4 +9,6 @@ int main() {
     obj1->doSomthing();
     obj1 = new ConcereteDecoratorB(obj1);
     obj1->doSomthing();
+    
+    delete obj1;
 }
